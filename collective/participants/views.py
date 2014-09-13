@@ -6,7 +6,7 @@ from twilio.rest import TwilioRestClient
 import urllib2
 
 def index(request):
-    return render(request, 'Collective/website/index.html')
+    return render(request, 'index.html')
 
 
 def recieve_text(request):

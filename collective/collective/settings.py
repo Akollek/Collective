@@ -13,9 +13,9 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
-#TEMPLATE_DIRS = (
-#    BASE_DIR + '/templates/',
-#)
+TEMPLATE_DIRS = (
+   BASE_DIR + '/templates/',
+)
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,6 +26,7 @@ SECRET_KEY = 'urkv7u5n921&=35ijyuu@m4_#!o2m%g_8-chiwpsu!_o3$kjk3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
 
 TEMPLATE_DEBUG = True
 
@@ -67,6 +68,11 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+    '/static/',
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
