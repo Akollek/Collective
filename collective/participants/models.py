@@ -1,4 +1,4 @@
-gfrom django.db import models
+from django.db import models
 
 class Participant(models.Model):
     number   = models.CharField(max_length=20)
