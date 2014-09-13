@@ -13,9 +13,9 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
-TEMPLATE_DIRS = (
-    BASE_DIR + '/templates/'
-)
+#TEMPLATE_DIRS = (
+#    BASE_DIR + '/templates/',
+#)
 
 
 # Quick-start development settings - unsuitable for production
